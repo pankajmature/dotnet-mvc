@@ -47,7 +47,8 @@ namespace webmvc
             app.UseRouting();
             app.UseMvc(routes =>
             {
-                routes.MapRoute("myroute","{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute("route1","{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute("route2", "Shop/{controller=Home}/{action=Index}/{id?}");
             });
             app.UseAuthorization();
 
