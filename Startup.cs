@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -45,17 +47,19 @@ namespace webmvc
             app.UseStaticFiles();
 
             app.UseRouting();
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute("route1","{controller=Home}/{action=Index}/{id?}");
-                routes.MapRoute("route2", "Shop/{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseMvc(ConfigureRoutes);
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
             });
+        }
+
+        public static void ConfigureRoutes(IRouteBuilder routes)
+        {
+            routes.MapRoute("route1", "{controller=Home}/{action=Index}/{id?}");
+            routes.MapRoute("route2", "Shop/{controller=Home}/{action=Index}/{id?}");
         }
     }
 }
