@@ -45,7 +45,10 @@ namespace webmvc
             app.UseStaticFiles();
 
             app.UseRouting();
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute("myroute","{controller=Home}/{action=Index}/{id?}");
+            });
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

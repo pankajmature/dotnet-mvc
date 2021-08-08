@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace webmvc.Controllers
 {
-    [Route("Color")]
+    //[Route("Color")]
     public class HomeController : Controller
     {
-        [Route("Blue")]
+        //[Route("Blue")]
         public string Index()
         {
             return "Hello from home controller.";

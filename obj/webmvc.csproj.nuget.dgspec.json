@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Study\\webmvc\\webmvc.csproj": {}
+    "C:\\Users\\Dell\\Source\\Repos\\pankajmature\\dotnetmvc\\webmvc.csproj": {}
   },
   "projects": {
-    "C:\\Study\\webmvc\\webmvc.csproj": {
+    "C:\\Users\\Dell\\Source\\Repos\\pankajmature\\dotnetmvc\\webmvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Study\\webmvc\\webmvc.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Source\\Repos\\pankajmature\\dotnetmvc\\webmvc.csproj",
         "projectName": "webmvc",
-        "projectPath": "C:\\Study\\webmvc\\webmvc.csproj",
+        "projectPath": "C:\\Users\\Dell\\Source\\Repos\\pankajmature\\dotnetmvc\\webmvc.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Study\\webmvc\\obj\\",
+        "outputPath": "C:\\Users\\Dell\\Source\\Repos\\pankajmature\\dotnetmvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
